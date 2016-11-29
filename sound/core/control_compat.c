@@ -322,7 +322,7 @@ static int ctl_elem_read_user(struct snd_card *card,
 		pr_aud_err("%s: copy from user fail\n", __func__);
 #endif
 		goto error;
-	} 
+	}
 
 	snd_power_lock(card);
 	err = snd_power_wait(card, SNDRV_CTL_POWER_D0);
@@ -362,7 +362,7 @@ static int ctl_elem_write_user(struct snd_ctl_file *file,
 		pr_aud_err("%s: copy from user fail\n", __func__);
 #endif
 		goto error;
-	} 
+	}
 
 	snd_power_lock(card);
 	err = snd_power_wait(card, SNDRV_CTL_POWER_D0);

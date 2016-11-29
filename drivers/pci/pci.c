@@ -4491,6 +4491,7 @@ int pci_get_new_domain_nr(void)
 {
 	return atomic_inc_return(&__domain_nr);
 }
+
 #endif
 
 /**

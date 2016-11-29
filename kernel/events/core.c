@@ -4456,7 +4456,6 @@ static const struct file_operations perf_fops = {
  * If there's data, ensure we set the poll() state and publish everything
  * to user-space before waking everybody up.
  */
-
 static inline struct fasync_struct **perf_event_fasync(struct perf_event *event)
 {
 	/* only the parent has fasync state */
